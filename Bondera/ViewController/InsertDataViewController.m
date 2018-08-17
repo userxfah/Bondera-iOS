@@ -232,7 +232,7 @@ GADRequest *request;
             NSArray *add = [[NSArray alloc] init];
             NSString *address = @"";
             add = [placemark.addressDictionary objectForKey:@"FormattedAddressLines"];
-            for (int i = 1; i<add.count; i++) {
+            for (int i = 0; i<add.count; i++) {
                 NSLog(@"Location : %@",add[i]);
                 address = [address stringByAppendingString:add[i]];
                 address = [NSString stringWithFormat:@"%@ ",address];
